@@ -28,9 +28,14 @@
         <button @click="decrement">Decrement</button>
         <button @click="addStep(5)">Inc</button>
 
+        <div>
+            <span v-for="n in 10" v-if="even(n)">{{ n }} </span>
+        </div>
     </div>
     <script src="script.js">
     </script>
+
+
 </body>
 
 </html>

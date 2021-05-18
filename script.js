@@ -20,6 +20,9 @@ new Vue({
         },
         logName: function() {
             console.log('test input log')
+        },
+        even: function(a) {
+            return a % 2 == 0 ? true : false;
         }
 
     },
