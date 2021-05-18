@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vuejs.js"></script>
+    <title>Vue Js</title>
+</head>
+
+<body>
+
+    <h1>First Page Using VueJs</h1>
+
+    <div id="app">
+        <!-- <form action=""> -->
+        <!-- <input type="text" name="" id=""> -->
+        <input @keyup.enter="logName" type="text" name="" id="" v-model="counte">
+
+        <h1>{{ counte }} * 7 ={{ calcul }}</h1>
+        <!-- <button @click="test">Submit</button> -->
+        <!-- </form> -->
+
+        <h1> {{ counte }}</h1>
+        <button @click="increment">Inc</button>
+        <button @click.once="increment">Incrementation 1 seule fois</button>
+        <button @click="decrement">Decrement</button>
+        <button @click="addStep(5)">Inc</button>
+
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
